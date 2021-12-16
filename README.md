@@ -1,6 +1,6 @@
 <div id="top"></div>
 
-[![LinkedIn][linkedin-shield]][www.linkedin.com/in/chetnasahu]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
 
 
@@ -11,198 +11,82 @@
     <img src="logo.jpg" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">project_title</h3>
+<h3 align="center">Boom Bikes Demand Analysis</h3>
 
-  <p align="center">
-    project_description
+  <p align="left">
+    Assignment for upGrade PG Diploma Data Science
     <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
+    Student : Chetna Sahu
     <br />
+    Date : 16th Dec 2021
     <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
-    ·
-    <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
-  </p>
+    </p>
 </div>
 
 
-
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details>
-
-
-
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## Subjective Questions
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email`, `email_client`, `project_title`, `project_description`
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-### Built With
-
-* [Next.js](https://nextjs.org/)
-* [React.js](https://reactjs.org/)
-* [Vue.js](https://vuejs.org/)
-* [Angular](https://angular.io/)
-* [Svelte](https://svelte.dev/)
-* [Laravel](https://laravel.com)
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- GETTING STARTED -->
-## Getting Started
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
-### Installation
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/github_username/repo_name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
+<h4>Q1. From your analysis of the categorical variables from the dataset,
+what could you infer about their effect on the dependent variable?
+<br /><br />
+Ans: Here are the inferences which I made from my analysis of the Categorical
+variables on the dependent variables i.e count are:<br />
+1) Boombikes renting were more in 2019 as compared to 2018 and also the
+median of 2019 (i.e 6000) is more than that of 2018 (i.e 4000).<br />
+2) The median of People renting bikes is more for holidays than to non
+holidays but the data is more spread out for non holiday peoples, the
+reason may be on holidays people prefer to rent bikes and go on drive or
+on vacation but they can’t do that on non-holidays.<br />
+3) People renting bikes on working and non-working days are pretty similar,
+there is slight difference in their median but it’s pretty small.<br />
+4) People renting bikes on Fall season is very high so is the median so it means
+that the weather condition on fall season is optimal to ride bikes.<br />
+5) People renting bikes on July is high so does the median than comes
+September this implies that Fall season month have high median.<br />
+6) Clear weather is most optimal for bike renting as temperature is optimal
+and humidity is less.<br />
+7) People renting bikes on Thursday, Friday and Sunday is more as compared
+to rest of the days.<br />
+<br />Q2. Why is it important to use drop_first=True during dummy variable
+creation?<br /><br />
+Ans: drop_first=True is important to use, as it helps in reducing the extra column
+created during dummy variable creation. Hence it reduces the correlations
+created among dummy variables. If we have categorical variable with n-levels,
+then we need to use n-1 columns to represent the dummy variables.<br />
+<br />Q3) Looking at the pair-plot among the numerical variables, which one
+has the highest correlation with the target variable?<br /><br />
+Ans: By looking at the pair-plot among the numerical variables I found that ‘temp’
+variables has highest correlation (0.63) with target variable i.e ‘count’.<br />
+<br />Q4) How did you validate the assumptions of Linear Regression after
+building the model on the training set?<br /><br />
+Ans: The assumptions of Linear Regression can be validated after building the
+model on the training set:<br />
+1. Linear regression states only linear relationship between dependent and
+independent variables. It can be validated by plotting a scatter plot between
+the features and the target.<br />
+2. Homoscedasticity can be validated by using scatter plot of residual values vs
+predicted values.<br />
+3. Multicollinearity is a state of very high inter-correlations among the
+independent variables and it can be validated by using Pair-plots and
+Heatmaps for identifying highly correlated features.<br />
+4. The error(residuals) follow a normal distribution and it can be validated by
+plotting a q-q plot.<br />
+5. Autocorrelation occurs when the residual errors are dependent on each
+other. Autocorrelation can be tested with the help of Durbin-Watson test.<br />
+<br />Q5) Based on the final model, which are the top 3 features contributing
+significantly towards explaining the demand of the shared bikes?<br /><br />
+Ans: The top 3 features contributing significantly towards the demand of share
+bikes are:<br />
+- Temperature (positively correlated i.e 0.63)<br />
+- Year (positively correlated i.e 0.57)<br />
+- Season spring (negatively correlated i.e -0.56)
+</h4>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-- [] Feature 1
-- [] Feature 2
-- [] Feature 3
-    - [] Nested Feature
-
-See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- CONTACT -->
-## Contact
-
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
-
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-* []()
-* []()
-* []()
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
-[contributors-url]: https://github.com/github_username/repo_name/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo_name.svg?style=for-the-badge
-[forks-url]: https://github.com/github_username/repo_name/network/members
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo_name.svg?style=for-the-badge
-[stars-url]: https://github.com/github_username/repo_name/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo_name.svg?style=for-the-badge
-[issues-url]: https://github.com/github_username/repo_name/issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
-[license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/linkedin_username
-[product-screenshot]: images/screenshot.png
+[linkedin-url]: www.linkedin.com/in/chetnasahu
